@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="https://blog.csdn.net/weixin_43206949/article/details/84949814">
+<meta name="description" content="之前有小伙伴提出怎么局部修改element-ui的样式，这种情况下我们就可以使用深度作用选择器。 那什么是深度作用选择器呢？">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css-deep-class">
+<meta property="og:title" content="Scoped内使用深度作用选择器">
 <meta property="og:url" content="http://yoursite.com/2019/04/24/css-deep-class/index.html">
 <meta property="og:site_name" content="A Programing Cat">
-<meta property="og:description" content="https://blog.csdn.net/weixin_43206949/article/details/84949814">
+<meta property="og:description" content="之前有小伙伴提出怎么局部修改element-ui的样式，这种情况下我们就可以使用深度作用选择器。 那什么是深度作用选择器呢？">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-24T03:32:02.163Z">
+<meta property="og:updated_time" content="2019-05-08T12:45:44.392Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css-deep-class">
-<meta name="twitter:description" content="https://blog.csdn.net/weixin_43206949/article/details/84949814">
+<meta name="twitter:title" content="Scoped内使用深度作用选择器">
+<meta name="twitter:description" content="之前有小伙伴提出怎么局部修改element-ui的样式，这种情况下我们就可以使用深度作用选择器。 那什么是深度作用选择器呢？">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>css-deep-class | A Programing Cat</title>
+  <title>Scoped内使用深度作用选择器 | A Programing Cat</title>
   
 
 
@@ -259,7 +259,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">css-deep-class</h2>
+          <h2 class="post-title" itemprop="name headline">Scoped内使用深度作用选择器</h2>
         
 
         <div class="post-meta">
@@ -309,7 +309,12 @@
       
 
       
-        <p><a href="https://blog.csdn.net/weixin_43206949/article/details/84949814" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43206949/article/details/84949814</a></p>
+        <p>之前有小伙伴提出怎么局部修改element-ui的样式，这种情况下我们就可以使用深度作用选择器。</p>
+<p>那什么是深度作用选择器呢？</p>
+<a id="more"></a>
+<p>如果你希望 scoped 样式中的一个选择器能够作用得“更深”，例如影响子组件，你可以使用 &gt;&gt;&gt; 操作符<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style scoped&gt;</span><br><span class="line">    .parent &gt;&gt;&gt; .child &#123;</span><br><span class="line">        color: blue;</span><br><span class="line">     &#125;</span><br><span class="line">&lt;<span class="regexp">/style&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>上面的代码会被编译成<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.parent[data-v-f3a85fa2] .child &#123; </span><br><span class="line">    color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>但是如果用less或者sass的时候， &gt;&gt;&gt;操作符是解析不了的，这种情况可以使用/deep/操作符。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style lang=<span class="string">"less"</span> scoped&gt;</span><br><span class="line">    .parent /deep/ .child &#123;</span><br><span class="line">        color: blue;</span><br><span class="line">     &#125;</span><br><span class="line">&lt;<span class="regexp">/style&gt;</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -334,8 +339,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/16/nrm/" rel="next" title="nrm">
-                <i class="fa fa-chevron-left"></i> nrm
+              <a href="/2019/04/16/nrm/" rel="next" title="nrm安装与配置">
+                <i class="fa fa-chevron-left"></i> nrm安装与配置
               </a>
             
           </div>
@@ -412,7 +417,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

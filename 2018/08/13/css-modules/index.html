@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="css scoped现在多数项目都提倡scoped这种技术，是一种避免冲突、私有化都概念使用方法:12345&amp;lt;style scoped&amp;gt;    h1 &amp;#123;      color: blue;    &amp;#125;&amp;lt;/style&amp;gt; 编译后结果如下123h1[data-v-23543608] &amp;#123;    color: blue;&amp;#125; 优点很大程度上实现了样">
+<meta name="description" content="css scoped现在多数项目都提倡scoped这种技术，是一种避免冲突、私有化都概念使用方法:12345&amp;lt;style scoped&amp;gt;    h1 &amp;#123;      color: blue;    &amp;#125;&amp;lt;/style&amp;gt; 编译后结果如下123h1[data-v-f3a85fa2] &amp;#123;    color: blue;&amp;#125;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css scoped 和 css modules">
+<meta property="og:title" content="CSS Scoped 和 CSS Modules">
 <meta property="og:url" content="http://yoursite.com/2018/08/13/css-modules/index.html">
 <meta property="og:site_name" content="A Programing Cat">
-<meta property="og:description" content="css scoped现在多数项目都提倡scoped这种技术，是一种避免冲突、私有化都概念使用方法:12345&amp;lt;style scoped&amp;gt;    h1 &amp;#123;      color: blue;    &amp;#125;&amp;lt;/style&amp;gt; 编译后结果如下123h1[data-v-23543608] &amp;#123;    color: blue;&amp;#125; 优点很大程度上实现了样">
+<meta property="og:description" content="css scoped现在多数项目都提倡scoped这种技术，是一种避免冲突、私有化都概念使用方法:12345&amp;lt;style scoped&amp;gt;    h1 &amp;#123;      color: blue;    &amp;#125;&amp;lt;/style&amp;gt; 编译后结果如下123h1[data-v-f3a85fa2] &amp;#123;    color: blue;&amp;#125;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-08T11:34:22.376Z">
+<meta property="og:updated_time" content="2019-05-08T12:45:44.389Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css scoped 和 css modules">
-<meta name="twitter:description" content="css scoped现在多数项目都提倡scoped这种技术，是一种避免冲突、私有化都概念使用方法:12345&amp;lt;style scoped&amp;gt;    h1 &amp;#123;      color: blue;    &amp;#125;&amp;lt;/style&amp;gt; 编译后结果如下123h1[data-v-23543608] &amp;#123;    color: blue;&amp;#125; 优点很大程度上实现了样">
+<meta name="twitter:title" content="CSS Scoped 和 CSS Modules">
+<meta name="twitter:description" content="css scoped现在多数项目都提倡scoped这种技术，是一种避免冲突、私有化都概念使用方法:12345&amp;lt;style scoped&amp;gt;    h1 &amp;#123;      color: blue;    &amp;#125;&amp;lt;/style&amp;gt; 编译后结果如下123h1[data-v-f3a85fa2] &amp;#123;    color: blue;&amp;#125;">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>css scoped 和 css modules | A Programing Cat</title>
+  <title>CSS Scoped 和 CSS Modules | A Programing Cat</title>
   
 
 
@@ -259,7 +259,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">css scoped 和 css modules</h2>
+          <h2 class="post-title" itemprop="name headline">CSS Scoped 和 CSS Modules</h2>
         
 
         <div class="post-meta">
@@ -310,7 +310,8 @@
 
       
         <h3 id="css-scoped"><a href="#css-scoped" class="headerlink" title="css scoped"></a>css scoped</h3><p>现在多数项目都提倡scoped这种技术，是一种避免冲突、私有化都概念<br>使用方法:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style scoped&gt;</span><br><span class="line">    h1 &#123;</span><br><span class="line">      color: blue;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;<span class="regexp">/style&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>编译后结果如下<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">h1[data-v<span class="number">-23543608</span>] &#123;</span><br><span class="line">    color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>编译后结果如下<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">h1[data-v-f3a85fa2] &#123;</span><br><span class="line">    color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <p>优点<br>很大程度上实现了样式私有化，避免了相同类名带来的样式冲突</p>
 <p>缺点<br>1.并不能完全避免冲突，例如父子组件定义了相同的class名，父组件的样式权重要大于子组件的<br>2.scoped内不能定义全局样式<br>3.样式覆盖需要使用更高权重的inline-style或important关键字</p>
 <h3 id="css-modules"><a href="#css-modules" class="headerlink" title="css modules"></a>css modules</h3><p>css modules既不是官方标准，也不是浏览器特性，而是在构建过程中对css类名做了特殊处理，起到限定作用域的一种方式<br>使用方法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div :<span class="class"><span class="keyword">class</span></span>=<span class="string">"$style.title"</span>&gt;</span><br><span class="line">        hello world!</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>template&gt;</span><br><span class="line">&lt;style lang=<span class="string">"less"</span> <span class="built_in">module</span>&gt;</span><br><span class="line">    .title &#123;</span><br><span class="line">        color: #5daf34;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;<span class="regexp">/style&gt;</span></span><br></pre></td></tr></table></figure></p>
@@ -433,7 +434,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
