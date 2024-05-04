@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-957d9858","path":"/pages/about-javascript/js-promise-control.html","title":"如何控制promise并发数","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"如何控制promise并发数","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-javascript/js-promise-control.md"}');export{t as data};

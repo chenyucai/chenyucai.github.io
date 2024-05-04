@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-03855867","path":"/pages/about-sort/bubble-sort.html","title":"冒泡排序","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"基本概念","slug":"基本概念","link":"#基本概念","children":[]},{"level":2,"title":"代码实现","slug":"代码实现","link":"#代码实现","children":[]}],"git":{},"filePathRelative":"pages/about-sort/bubble-sort.md"}');export{t as data};

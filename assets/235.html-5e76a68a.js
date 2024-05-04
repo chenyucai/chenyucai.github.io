@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8a82f34a","path":"/pages/about-leetcode/235.html","title":"235.二叉搜索树的最近公共祖先","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/235.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6bfb191c","path":"/pages/about-javascript/js-event-bus.html","title":"JS实现event bus","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"JS实现event bus","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-javascript/js-event-bus.md"}');export{t as data};

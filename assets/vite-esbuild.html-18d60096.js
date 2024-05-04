@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-78b5d19b","path":"/pages/about-vite/vite-esbuild.html","title":"Esbuild的一些缺点","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-vite/vite-esbuild.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6efc5758","path":"/pages/about-leetcode/946.html","title":"946.验证栈序列","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/946.md"}');export{e as data};

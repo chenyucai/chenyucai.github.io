@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-20c8a274","path":"/pages/about-leetcode/290.html","title":"290.单词规律","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/290.md"}');export{e as data};

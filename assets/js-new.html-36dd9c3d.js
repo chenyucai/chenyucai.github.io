@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-36c36a02","path":"/pages/about-javascript/js-new.html","title":"new运算符原理","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"new运算符原理","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-javascript/js-new.md"}');export{t as data};

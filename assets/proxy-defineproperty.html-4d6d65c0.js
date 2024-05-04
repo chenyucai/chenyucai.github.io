@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7c714186","path":"/pages/about-vue/proxy-defineproperty.html","title":"Proxy和Object.defineProperty的区别","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"Proxy和Object.defineProperty的区别","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-vue/proxy-defineproperty.md"}');export{e as data};

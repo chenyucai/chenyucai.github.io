@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-9988acd2","path":"/pages/about-javascript/js-stack.html","title":"JS获取调用栈信息","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"JS获取调用栈信息","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-javascript/js-stack.md"}');export{t as data};

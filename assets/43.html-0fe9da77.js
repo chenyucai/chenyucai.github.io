@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1cf5dbe4","path":"/pages/about-leetcode/43.html","title":"43.字符串相乘","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/43.md"}');export{e as data};

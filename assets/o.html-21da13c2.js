@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-16426fc5","path":"/pages/about-data-structure/o.html","title":"算法复杂度","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"时间复杂度","slug":"时间复杂度","link":"#时间复杂度","children":[]},{"level":2,"title":"空间复杂度","slug":"空间复杂度","link":"#空间复杂度","children":[]}],"git":{},"filePathRelative":"pages/about-data-structure/o.md"}');export{t as data};

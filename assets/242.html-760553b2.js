@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2af39082","path":"/pages/about-leetcode/242.html","title":"242.有效的字母异位词","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/242.md"}');export{e as data};

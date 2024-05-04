@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-57d1cc94","path":"/pages/about-rollup/rollup-output.html","title":"rollup产物类型","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"rollup产物类型","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-rollup/rollup-output.md"}');export{t as data};

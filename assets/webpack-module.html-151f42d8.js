@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-07c3c1f2","path":"/pages/about-webpack/webpack-module.html","title":"webpack中module、chunk、bundle的区别","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"webpack中module、chunk、bundle的区别","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-webpack/webpack-module.md"}');export{e as data};

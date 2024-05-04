@@ -1,0 +1,74 @@
+import{_ as n,o as s,c as a,a as t}from"./app-5b0f25a8.js";const p={},e=t(`<h1 id="_5-最长的回文子串" tabindex="-1"><a class="header-anchor" href="#_5-最长的回文子串" aria-hidden="true">#</a> 5.最长的回文子串</h1><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token doc-comment comment">/**
+ * <span class="token keyword">@param</span> <span class="token class-name"><span class="token punctuation">{</span>string<span class="token punctuation">}</span></span> <span class="token parameter">s</span>
+ * <span class="token keyword">@return</span> <span class="token class-name"><span class="token punctuation">{</span>string<span class="token punctuation">}</span></span>
+ */</span>
+<span class="token comment">// 暴力枚举</span>
+<span class="token keyword">var</span> <span class="token function-variable function">longestPalindrome</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token comment">// 自身单个字符也算一个回文串，假设没有长度大于1的回文串，则每个字符都是一个回文串，长度为1</span>
+    <span class="token keyword">let</span> maxLenStr <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 枚举以每个字母开头的回文串</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> s<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        start <span class="token operator">=</span> i
+        <span class="token comment">// 从后往前遍历找回文串,从后往前这样才能找到更长的回文串</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> s<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&gt;</span> start<span class="token punctuation">;</span> j<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> start <span class="token operator">=</span> i <span class="token comment">// 开头下标</span>
+            <span class="token keyword">let</span> end <span class="token operator">=</span> j <span class="token comment">// 结尾下标</span>
+            <span class="token comment">// 检查是否符合回文串</span>
+            <span class="token keyword">let</span> isHuiWen <span class="token operator">=</span> <span class="token boolean">true</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>start <span class="token operator">&lt;</span> end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>start<span class="token punctuation">)</span> <span class="token operator">!==</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>end<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    isHuiWen <span class="token operator">=</span> <span class="token boolean">false</span>
+                    <span class="token keyword">break</span>
+                <span class="token punctuation">}</span>
+                start<span class="token operator">++</span>
+                end<span class="token operator">--</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>isHuiWen<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">let</span> str <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+                res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>str<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> maxLenStr<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    maxLenStr <span class="token operator">=</span> str
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> maxLenStr
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token doc-comment comment">/**
+ * <span class="token keyword">@param</span> <span class="token class-name"><span class="token punctuation">{</span>string<span class="token punctuation">}</span></span> <span class="token parameter">s</span>
+ * <span class="token keyword">@return</span> <span class="token class-name"><span class="token punctuation">{</span>string<span class="token punctuation">}</span></span>
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">longestPalindrome</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> maxStr <span class="token operator">=</span> <span class="token string">&#39;&#39;</span>
+    <span class="token comment">// 中心扩散法找回文串</span>
+    <span class="token comment">// 遍历每个字符，以每个字符为中心，向左右扩散找回文串</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> s<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> char <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token comment">// 以char为中心向左右扩散找回文串</span>
+        <span class="token comment">// 回文串有两种形式</span>
+        <span class="token keyword">let</span> str1 <span class="token operator">=</span> <span class="token function">expandAroudCenter</span><span class="token punctuation">(</span>s<span class="token punctuation">,</span> i<span class="token punctuation">,</span> i<span class="token punctuation">)</span> <span class="token comment">// 中间含有单个字符：aabcc,左右起点都是b</span>
+        <span class="token keyword">let</span> str2 <span class="token operator">=</span> <span class="token function">expandAroudCenter</span><span class="token punctuation">(</span>s<span class="token punctuation">,</span> i<span class="token punctuation">,</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// 中间不含单个字符: aabbcc,左起点是第一个b，右起点是第二个b</span>
+        <span class="token comment">// 比较str1,str2,maxStr的长度</span>
+        <span class="token keyword">let</span> max <span class="token operator">=</span> str1<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> str2<span class="token punctuation">.</span>length <span class="token operator">?</span> str1 <span class="token operator">:</span> str2
+        maxStr <span class="token operator">=</span> max<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> maxStr<span class="token punctuation">.</span>length <span class="token operator">?</span> max <span class="token operator">:</span> maxStr
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> maxStr
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">expandAroudCenter</span><span class="token punctuation">(</span><span class="token parameter">s<span class="token punctuation">,</span> left<span class="token punctuation">,</span> right</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>left <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> right <span class="token operator">&lt;</span> s<span class="token punctuation">.</span>length <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>left<span class="token punctuation">)</span> <span class="token operator">===</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        left<span class="token operator">--</span>
+        right<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> strStart <span class="token operator">=</span> left <span class="token operator">+</span> <span class="token number">1</span> <span class="token comment">// while最后多减了一次，要加回来</span>
+    <span class="token keyword">let</span> strEnd <span class="token operator">=</span> right <span class="token operator">-</span> <span class="token number">1</span> <span class="token comment">// while最后多加了一次，要减回去</span>
+    <span class="token keyword">let</span> str <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>strStart<span class="token punctuation">,</span> strEnd <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> str
+<span class="token punctuation">}</span>
+
+<span class="token comment">// console.log(longestPalindrome(&quot;babad&quot;))</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">longestPalindrome</span><span class="token punctuation">(</span><span class="token string">&quot;aacabdkacaa&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),o=[e];function c(l,i){return s(),a("div",null,o)}const r=n(p,[["render",c],["__file","5.html.vue"]]);export{r as default};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-250b00dd","path":"/pages/about-network/udp.html","title":"UDP协议","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"UDP协议","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-network/udp.md"}');export{t as data};

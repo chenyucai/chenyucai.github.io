@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-c8bc389e","path":"/pages/about-data-structure/bst.html","title":"实现二叉搜索树","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-data-structure/bst.md"}');export{t as data};

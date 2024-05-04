@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-054f4308","path":"/pages/about-vite/vite-react.html","title":"vite处理react","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-vite/vite-react.md"}');export{t as data};

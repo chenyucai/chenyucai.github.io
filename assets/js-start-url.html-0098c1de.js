@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-f2094dca","path":"/pages/about-javascript/js-start-url.html","title":"在浏览器输入一个URL","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"在浏览器输入一个URL","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-javascript/js-start-url.md"}');export{t as data};

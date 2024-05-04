@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-29cb8f12","path":"/pages/about-webpack/webpack-file.html","title":"webpack处理文件","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"webpack处理文件","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-webpack/webpack-file.md"}');export{e as data};

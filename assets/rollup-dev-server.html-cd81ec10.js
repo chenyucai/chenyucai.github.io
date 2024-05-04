@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-87442808","path":"/pages/about-rollup/rollup-dev-server.html","title":"rollup之devServer","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"rollup之devServer","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-rollup/rollup-dev-server.md"}');export{e as data};

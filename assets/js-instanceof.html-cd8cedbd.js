@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-be851eb2","path":"/pages/about-javascript/js-instanceof.html","title":"instanceof原理","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"instanceof原理","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-javascript/js-instanceof.md"}');export{t as data};

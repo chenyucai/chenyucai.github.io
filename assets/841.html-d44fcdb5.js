@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-58186c5a","path":"/pages/about-leetcode/841.html","title":"841.钥匙和房间","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/841.md"}');export{e as data};

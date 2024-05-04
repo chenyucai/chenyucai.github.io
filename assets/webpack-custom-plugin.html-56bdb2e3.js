@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-182662d0","path":"/pages/about-webpack/webpack-custom-plugin.html","title":"webpack自定义插件","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"webpack自定义插件","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-webpack/webpack-custom-plugin.md"}');export{a as data};

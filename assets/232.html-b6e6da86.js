@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-94c00704","path":"/pages/about-leetcode/232.html","title":"232.用栈实现队列","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/232.md"}');export{e as data};

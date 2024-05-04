@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-1e795c6a","path":"/pages/about-network/post-get.html","title":"POST和GET的区别","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"POST和GET的区别","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-network/post-get.md"}');export{t as data};

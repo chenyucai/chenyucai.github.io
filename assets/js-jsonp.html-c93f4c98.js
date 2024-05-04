@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-f5c108d2","path":"/pages/about-javascript/js-jsonp.html","title":"JS实现jsonp","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"JS实现jsonp","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-javascript/js-jsonp.md"}');export{t as data};

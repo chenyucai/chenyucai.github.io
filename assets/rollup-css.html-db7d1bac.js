@@ -1,0 +1,26 @@
+import{_ as s,o as n,c as a,a as e}from"./app-5b0f25a8.js";const t={},p=e(`<h1 id="rollup处理css" tabindex="-1"><a class="header-anchor" href="#rollup处理css" aria-hidden="true">#</a> rollup处理Css</h1><p><strong>1.安装postcss，rollup-plugin-postcss天然支持css modules，css extract，css预处理</strong></p><p><code>pnpm i -D postcss postcss-preset-env rollup-plugin-postcss</code></p><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token comment">// postcss.config.js</span>
+<span class="token keyword">const</span> presetEnv <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&#39;postcss-preset-env&#39;</span><span class="token punctuation">)</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+ <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+   <span class="token function">presetEnv</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+     <span class="token literal-property property">browsers</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+       <span class="token string">&quot;last 2 versions&quot;</span><span class="token punctuation">,</span>
+       <span class="token string">&quot;&gt; 1%&quot;</span><span class="token punctuation">,</span>
+       <span class="token string">&quot;iOS 7&quot;</span><span class="token punctuation">,</span>
+       <span class="token string">&quot;last 3 iOS versions&quot;</span>
+     <span class="token punctuation">]</span>
+   <span class="token punctuation">}</span><span class="token punctuation">)</span>
+ <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote><p>postcss-preset-env 允许开发者使用最新的 CSS 语法而不用担心浏览器兼容性。<br> postcss-preset-env 会将最新的 CSS 语法转换为目标环境的浏览器能够理解的 CSS 语法。<br> postcss-preset-env 集成了 autoprefixer。</p></blockquote><p><strong>2.提取CSS</strong></p><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token keyword">import</span> path <span class="token keyword">from</span> <span class="token string">&#39;path&#39;</span>
+<span class="token function">postcss</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">extract</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// Or with custom file name</span>
+  <span class="token literal-property property">extract</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">&#39;dist/my-custom-file-name.css&#39;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>3. CSS modules</strong></p><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token function">postcss</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// Or with custom options for \`postcss-modules\`</span>
+  <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>4. 预处理 Sass/Stylus/Less</strong></p><ul><li>node-sass: yarn add node-sass --dev</li><li>stylus: yarn add stylus --dev</li><li>less: yarn add less --dev</li></ul><p><strong>5.css压缩</strong></p><p>使用<code>cssnano</code>对打包后的css进行压缩</p>`,13),o=[p];function c(l,i){return n(),a("div",null,o)}const u=s(t,[["render",c],["__file","rollup-css.html.vue"]]);export{u as default};

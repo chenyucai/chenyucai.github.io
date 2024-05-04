@@ -1,0 +1,1 @@
+const a=JSON.parse(`{"key":"v-45493506","path":"/pages/about-javascript/js-abc.html","title":"a.b.c和a['b']['c']哪个性能更高","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"a.b.c和a['b']['c']哪个性能更高","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-javascript/js-abc.md"}`);export{a as data};

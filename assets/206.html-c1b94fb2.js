@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1dc0ad37","path":"/pages/about-leetcode/206.html","title":"206.反转链表","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/206.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6215fc3a","path":"/pages/about-leetcode/973.html","title":"973.最接近原点的K个数","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/973.md"}');export{e as data};

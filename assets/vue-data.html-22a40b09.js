@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-c308f18a","path":"/pages/about-vue/vue-data.html","title":"vue的data为什么是一个function","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"vue的data为什么是一个function","description":null},"headers":[],"git":{},"filePathRelative":"pages/about-vue/vue-data.md"}');export{t as data};

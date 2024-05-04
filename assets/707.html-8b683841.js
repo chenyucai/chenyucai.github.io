@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-26db6631","path":"/pages/about-leetcode/707.html","title":"707.设计链表","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/707.md"}');export{e as data};

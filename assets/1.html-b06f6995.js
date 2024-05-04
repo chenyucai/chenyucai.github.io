@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5b4b4044","path":"/pages/about-leetcode/1.html","title":"1.两数之和","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/1.md"}');export{e as data};

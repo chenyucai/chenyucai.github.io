@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-27b52a41","path":"/pages/about-leetcode/383.html","title":"383.赎金信","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/383.md"}');export{e as data};

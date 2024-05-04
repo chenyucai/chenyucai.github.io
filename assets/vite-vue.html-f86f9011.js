@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6bcd6355","path":"/pages/about-vite/vite-vue.html","title":"vite处理vue","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-vite/vite-vue.md"}');export{e as data};

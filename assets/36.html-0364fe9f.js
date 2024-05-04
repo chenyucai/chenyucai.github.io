@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-25a3ab00","path":"/pages/about-leetcode/36.html","title":"36.有效的数独","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pages/about-leetcode/36.md"}');export{e as data};
